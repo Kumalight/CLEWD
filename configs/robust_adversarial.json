@@ -1,0 +1,31 @@
+{
+  "dataroot": "./smokeRS/smokers20/",
+  "dataset": "10",
+  "num_iters": 4160,
+  "exp": "closedset",
+  "method": "robust_adversarial",
+  "anomaly_class": "other",
+  "ano_type": 1,
+
+  "model": "resnet18",
+  "batchSize": 30,
+  "lr": 0.005,
+  "lrC": 0.005,
+  "lrD": 0.01,
+  "optimizer": "sgd",
+  "momentum": 0.9,
+  "loss": "ns",
+  "disc_iters": 2 ,
+  "ent_weight": 0.0,
+  "vat_weight": 0.0,
+
+  "logdir": "results",
+  "log_interval": 60,
+  "save_interval": 60,
+  "sep_bn": 0,
+  "regularization": "",
+  "gp_lamb": 10,
+  "rho": 0.1,
+  "weight_update_type": "discrete",
+  "weight_update_iters": 500
+}
